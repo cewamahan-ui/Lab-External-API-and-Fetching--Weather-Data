@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather Alerts</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        
+        #error-message {
+            color: red;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Alerts</h1>
+    
+    <div>
+        <input type="text" id="state-input" placeholder="Enter state abbreviation" maxlength="2">
+        <button id="fetch-btn">Get Weather Alerts</button>
+    </div>
+    
+    <div id="error-message" class="hidden"></div>
+    <div id="alerts-display"></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
